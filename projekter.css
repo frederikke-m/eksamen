@@ -1,0 +1,225 @@
+{
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  background: #1A66B4;
+}
+
+body {
+  background-color: #FCF4E0;
+  position: absolute;
+}
+
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+  position: relative;
+  margin: 0;
+}
+
+a:link, a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: 'League Spartan';
+  src: url('fonts/LeagueSpartan-Bold.otf');
+}
+
+
+@media screen and (max-width: 650px) {
+
+  .nav {
+    font-family: "League Spartan", Arial, sans-serif;
+    src: url('fonts/LeagueSpartan-Bold.otf');
+    font-size: 3.627vw;
+    font-kerning: normal;
+    line-height: 125%;
+  }
+
+  ul {
+    padding: 4% 7.5%;
+  }
+
+  .teksttilbillede {
+    text-align: center;
+    font-family: "League Spartan", Arial, sans-serif;
+    src: url('fonts/LeagueSpartan-Bold.otf');
+    font-size: 6.4vw;
+    margin-bottom: 10%;
+    padding-top: 25%;
+  }
+
+  .projekter {
+    width: 100vw;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "project1"
+    "project2";
+  }
+
+  img {
+    width: 70vw;
+    margin-left: 16%;
+    margin-bottom: 7%;
+    box-shadow: -4vw 4vw 0px 0px #FBCC00;
+  }
+
+  .projectname {
+    margin-bottom: 10%;
+    font-family: "League Spartan", Arial, sans-serif;
+    src: url('fonts/LeagueSpartan-Bold.otf');
+    font-size: 4vw;
+    font-kerning: normal;
+    text-align: center;
+  }
+
+  .fooddelivery {
+    grid-area: project1;
+  }
+
+  .redesign {
+    grid-area: project2;
+  }
+}
+
+@media screen and (min-width: 651px) and (max-width: 1279px) {
+  .nav {
+    font-family: "League Spartan", Arial, sans-serif;
+    src: url('fonts/LeagueSpartan-Bold.otf');
+    font-size: 2vw;
+    font-kerning: normal;
+    line-height: 125%;
+  }
+
+  ul {
+    padding: 2% 3%;
+    justify-content: space-around;
+  }
+
+  .teksttilbillede {
+    text-align: center;
+    margin-bottom: 10%;
+    font-family: "League Spartan", Arial, sans-serif;
+    src: url('fonts/LeagueSpartan-Bold.otf');
+    font-size: 4.5vw;
+    font-kerning: normal;
+    padding-top: 20%;
+  }
+
+  .projekter {
+    width: 100vw;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "project1"
+    "project2";
+  }
+
+  img {
+    width: 50vw;
+    margin-left: 25%;
+    margin-bottom: 5%;
+    box-shadow: -2vw 2vw 0px 0px #FBCC00;
+  }
+
+  .projectname {
+    margin-bottom: 10%;
+    font-family: "League Spartan", Arial, sans-serif;
+    src: url('fonts/LeagueSpartan-Bold.otf');
+    font-size: 2.75vw;
+    font-kerning: normal;
+    text-align: center;
+    margin-bottom: 10%;
+  }
+
+  .fooddelivery {
+    grid-area: project1;
+  }
+
+  .redesign {
+    grid-area: project2;
+  }
+
+  br {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+
+  br {
+    display: none;
+  }
+
+  .nav {
+    font-family: "League Spartan", Arial, sans-serif;
+    font-size: 1vw;
+    font-kerning: normal;
+  }
+
+  ul {
+    padding: .75% 2.5%;
+    justify-content: space-around;
+  }
+
+  .teksttilbillede {
+    margin-left: 29.5%;
+    margin-bottom: 20%;
+    font-family: "League Spartan", Arial, sans-serif;
+    font-size: 2vw;
+    font-kerning: normal;
+    padding-top: 18%;
+  }
+
+  .projekter {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "fooddelivery redesign";
+    margin-top: 12%;
+    grid-column-gap: 20%;
+    margin-left: 65%;
+    margin-right: 10%;
+  }
+
+  .fooddelivery {
+    grid-area: fooddelivery;
+  }
+
+  .redesign {
+    grid-area: redesign;
+  }
+
+  img {
+    width: 20vw;
+    margin-bottom: 7%;
+    box-shadow: -1vw 1vw 0px 0px #FBCC00;
+  }
+
+  .projectname {
+    margin-bottom: 15%;
+    font-family: "League Spartan", Arial, sans-serif;
+    font-size: 1vw;
+    font-kerning: normal;
+    text-align: center;
+  }
+}
